@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{62D8BA22-BE9D-4073-9B55-84FE2F079040}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Agenda", "Agenda", "{843B5C67-17C6-47C8-907C-4C952F90B4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaEmpresa.SharedKernel.Dominio", "MinhaEmpresa.SharedKernel.Dominio\MinhaEmpresa.SharedKernel.Dominio.csproj", "{1AC4D75A-7F73-4041-BC71-B2F54E3C386A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaEmpresa.SharedKernel.Testes", "MinhaEmpresa.SharedKernel.Testes\MinhaEmpresa.SharedKernel.Testes.csproj", "{AF451C4F-D9D1-40DA-8AF0-5E6C4AA0FB0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaEmpresa.Agenda.Dominio", "MinhaEmpresa.Agenda.Dominio\MinhaEmpresa.Agenda.Dominio.csproj", "{26EBF744-F36D-4862-8282-892C3D6377CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaEmpresa.Agenda.Testes", "MinhaEmpresa.Agenda.Testes\MinhaEmpresa.Agenda.Testes.csproj", "{32108329-EB4A-46D9-A674-7B6027DB6556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinhaEmpresa.SharedKernel.Repositorio", "MinhaEmpresa.SharedKernel.Repositorio\MinhaEmpresa.SharedKernel.Repositorio.csproj", "{609435D2-73C0-42EF-BD4C-CCC57D533D8A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://prototipos.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MinhaEmpresa.Agenda.Dominio\\MinhaEmpresa.Agenda.Dominio.csproj
+		SccProjectTopLevelParentUniqueName1 = MinhaEmpresa.Agenda.sln
+		SccProjectName1 = MinhaEmpresa.Agenda.Dominio
+		SccLocalPath1 = MinhaEmpresa.Agenda.Dominio
+		SccProjectUniqueName2 = MinhaEmpresa.Agenda.Testes\\MinhaEmpresa.Agenda.Testes.csproj
+		SccProjectTopLevelParentUniqueName2 = MinhaEmpresa.Agenda.sln
+		SccProjectName2 = MinhaEmpresa.Agenda.Testes
+		SccLocalPath2 = MinhaEmpresa.Agenda.Testes
+		SccProjectUniqueName3 = MinhaEmpresa.SharedKernel.Dominio\\MinhaEmpresa.SharedKernel.Dominio.csproj
+		SccProjectTopLevelParentUniqueName3 = MinhaEmpresa.Agenda.sln
+		SccProjectName3 = MinhaEmpresa.SharedKernel.Dominio
+		SccLocalPath3 = MinhaEmpresa.SharedKernel.Dominio
+		SccProjectUniqueName4 = MinhaEmpresa.SharedKernel.Repositorio\\MinhaEmpresa.SharedKernel.Repositorio.csproj
+		SccProjectTopLevelParentUniqueName4 = MinhaEmpresa.Agenda.sln
+		SccProjectName4 = MinhaEmpresa.SharedKernel.Repositorio
+		SccLocalPath4 = MinhaEmpresa.SharedKernel.Repositorio
+		SccProjectUniqueName5 = MinhaEmpresa.SharedKernel.Testes\\MinhaEmpresa.SharedKernel.Testes.csproj
+		SccProjectTopLevelParentUniqueName5 = MinhaEmpresa.Agenda.sln
+		SccProjectName5 = MinhaEmpresa.SharedKernel.Testes
+		SccLocalPath5 = MinhaEmpresa.SharedKernel.Testes
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AC4D75A-7F73-4041-BC71-B2F54E3C386A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC4D75A-7F73-4041-BC71-B2F54E3C386A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC4D75A-7F73-4041-BC71-B2F54E3C386A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC4D75A-7F73-4041-BC71-B2F54E3C386A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF451C4F-D9D1-40DA-8AF0-5E6C4AA0FB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF451C4F-D9D1-40DA-8AF0-5E6C4AA0FB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF451C4F-D9D1-40DA-8AF0-5E6C4AA0FB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF451C4F-D9D1-40DA-8AF0-5E6C4AA0FB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26EBF744-F36D-4862-8282-892C3D6377CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26EBF744-F36D-4862-8282-892C3D6377CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26EBF744-F36D-4862-8282-892C3D6377CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26EBF744-F36D-4862-8282-892C3D6377CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32108329-EB4A-46D9-A674-7B6027DB6556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32108329-EB4A-46D9-A674-7B6027DB6556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32108329-EB4A-46D9-A674-7B6027DB6556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32108329-EB4A-46D9-A674-7B6027DB6556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609435D2-73C0-42EF-BD4C-CCC57D533D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609435D2-73C0-42EF-BD4C-CCC57D533D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609435D2-73C0-42EF-BD4C-CCC57D533D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609435D2-73C0-42EF-BD4C-CCC57D533D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1AC4D75A-7F73-4041-BC71-B2F54E3C386A} = {62D8BA22-BE9D-4073-9B55-84FE2F079040}
+		{AF451C4F-D9D1-40DA-8AF0-5E6C4AA0FB0B} = {62D8BA22-BE9D-4073-9B55-84FE2F079040}
+		{26EBF744-F36D-4862-8282-892C3D6377CE} = {843B5C67-17C6-47C8-907C-4C952F90B4AE}
+		{32108329-EB4A-46D9-A674-7B6027DB6556} = {843B5C67-17C6-47C8-907C-4C952F90B4AE}
+		{609435D2-73C0-42EF-BD4C-CCC57D533D8A} = {62D8BA22-BE9D-4073-9B55-84FE2F079040}
+	EndGlobalSection
+EndGlobal

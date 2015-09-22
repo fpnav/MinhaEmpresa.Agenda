@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+
+  <hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory>
+
+    <!-- configurations -->
+    <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <property name="dialect">NHibernate.Dialect.MsSql2012Dialect</property>
+    <property name="connection.connection_string">
+      Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Fabio\Documents\NhDbTest.mdf;Integrated Security=True;Connect Timeout=30
+    </property>
+
+    <!-- Mostra SQL gerado pelo NHiberante no Console.Out -->
+    <property name="show_sql">true</property>
+
+    <!-- Timeout dos Comandos -->
+    <property name="command_timeout">120</property>
+
+    <!-- Substituições das queries HQL  -->
+    <property name="query.substitutions">true 1, false 0, yes 'Y', no 'N'</property>
+
+    <!-- É uma verificação do NH que valida se os propriedades estão marcados como virtual -->
+    <property name="use_proxy_validator">false</property>
+
+    <!-- Classe que faz o gerenciamento das Sessões do NHibernate -->
+    <property name="current_session_context_class">NHibernate.Context.ManagedWebSessionContext</property>
+
+    <!-- Registrando os Assemblies que contém os mapeamentos -->
+    <mapping assembly="MinhaEmpresa.Agenda.Dominio"/>
+
+  </session-factory>
+</hibernate-configuration>
+
+
+
+
