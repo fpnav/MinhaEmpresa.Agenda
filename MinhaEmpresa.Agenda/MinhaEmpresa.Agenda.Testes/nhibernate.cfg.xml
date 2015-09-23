@@ -11,7 +11,7 @@
     </property>
 
     <!-- Atualiza/Cria tabelas e campos automaticamente no BD, com "create" cria o BD de novo-->
-    <property name="hbm2ddl.auto">update</property>
+    <property name="hbm2ddl.auto">create</property>
     
     <!-- Mostra SQL gerado pelo NHiberante no Console.Out -->
     <property name="show_sql">true</property>

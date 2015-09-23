@@ -1,20 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
-                   namespace="MinhaEmpresa.Agenda.Dominio.ValueObjects" assembly="MinhaEmpresa.Agenda.Dominio">
+                   namespace="MinhaEmpresa.Agenda.Dominio.Entidades" assembly="MinhaEmpresa.Agenda.Dominio">
 
   <class name="User" table="[Usuarios]" mutable="true">
 
-    <id name="Id"><generator class="identity"/></id>
+    <id name="Id">
+      <generator class="identity"/>
+    </id>
     <property name="UserName" />
-    
-    <component name="Address">
-      <property name="Street1"/>
-      <property name="Street2"/>
-      <property name="City"/>
-      <property name="Region"/>
-      <property name="Country"/>
-      <property name="PostalCode"/>
-    </component>
-  </class>
 
+    <bag table="EnderecosUsuario" name="Address">
+      <key column="Id" not-null="true"/>
+      <!--<list-index column="Adress_Position"></list-index>-->
+      <composite-element class="MinhaEmpresa.Agenda.Dominio.ValueObjects.Address">
+        <property name="Street1"/>
+        <property name="Street2"/>
+        <property name="City"/>
+        <property name="Region"/>
+        <property name="Country"/>
+        <property name="PostalCode"/>
+      </composite-element>
+    </bag>
+  </class>
 </hibernate-mapping>

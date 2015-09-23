@@ -46,7 +46,7 @@
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValueObjects\Address.cs" />
-    <Compile Include="ValueObjects\User.cs" />
+    <Compile Include="Entidades\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MinhaEmpresa.SharedKernel.Dominio\MinhaEmpresa.SharedKernel.Dominio.csproj">
@@ -55,7 +55,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mapeamentos\EnderecoUsuario.hbm.xml" />
+    <EmbeddedResource Include="Mapeamentos\EnderecoUsuario.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
