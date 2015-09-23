@@ -10,6 +10,8 @@
       Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Fabio\Documents\NhDbTest.mdf;Integrated Security=True;Connect Timeout=30
     </property>
 
+    <property name="hbm2ddl.auto">update</property>
+    
     <!-- Mostra SQL gerado pelo NHiberante no Console.Out -->
     <property name="show_sql">true</property>
 

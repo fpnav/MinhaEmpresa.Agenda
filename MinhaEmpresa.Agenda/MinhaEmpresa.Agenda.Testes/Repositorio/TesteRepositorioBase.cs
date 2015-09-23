@@ -14,7 +14,9 @@ namespace MinhaEmpresa.Agenda.Testes.Repositorio
 
         public TesteRepositorioBase()
         {
+            //NHibernateHelper.CreateDb();
             Helper = new RepositorioHelper();
+            
             //Kernel.Start();
             //Helper = Kernel.Get<IRepositorioHelper>();
         }

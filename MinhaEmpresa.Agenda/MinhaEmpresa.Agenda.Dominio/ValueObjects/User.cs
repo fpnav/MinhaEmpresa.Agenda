@@ -15,7 +15,7 @@ namespace MinhaEmpresa.Agenda.Dominio.ValueObjects
             UserName = userName;
         }
 
-        public int UserId { get; private set; }
+        public int Id { get; private set; }
 
         public string UserName { get; private set; }
 
@@ -32,6 +32,12 @@ namespace MinhaEmpresa.Agenda.Dominio.ValueObjects
               street1, street2,
               city, region,
               country, postalCode);
+        }
+
+        //Just for NHibernate
+        public User()
+        {
+            
         }
     }
 }

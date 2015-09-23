@@ -25,6 +25,12 @@ namespace MinhaEmpresa.Agenda.Dominio.ValueObjects
         public string Country { get; private set; }
         public string PostalCode { get; private set; }
 
+        //Just for NHibernate
+        public Address()
+        {
+            
+        }
+
     }
 
     

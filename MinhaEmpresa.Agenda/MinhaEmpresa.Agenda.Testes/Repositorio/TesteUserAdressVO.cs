@@ -17,6 +17,7 @@ namespace MinhaEmpresa.Agenda.Testes.Repositorio
         {
             using (var sessao = Helper.AbrirSessao())
             {
+                
                 try
                 {
                     var usuario = new User("Fabio Navarro");

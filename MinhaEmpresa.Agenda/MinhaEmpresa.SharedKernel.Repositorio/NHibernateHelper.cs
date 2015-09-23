@@ -2,6 +2,7 @@
 using System.Reflection;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernate.Dialect;
 using NHibernate.Tool.hbm2ddl;
 
 namespace MinhaEmpresa.SharedKernel.Repositorio
@@ -36,7 +37,7 @@ namespace MinhaEmpresa.SharedKernel.Repositorio
             var config = new Configuration().Configure(GetPath() + "\\nhibernate.cfg.xml");
             var schemaExport = new SchemaExport(config);
             schemaExport.Drop(true, false);
-            schemaExport.Create(true, false);
+            schemaExport.Create(true, true);
         }
     }
 }

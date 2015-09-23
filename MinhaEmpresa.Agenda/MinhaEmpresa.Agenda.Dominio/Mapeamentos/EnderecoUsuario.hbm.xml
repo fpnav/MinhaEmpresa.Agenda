@@ -2,10 +2,10 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    namespace="MinhaEmpresa.Agenda.Dominio.ValueObjects" assembly="MinhaEmpresa.Agenda.Dominio">
 
-  <class name="User" table="Usuarios" mutable="true">
+  <class name="User" table="[Usuarios]" mutable="true">
 
     <id name="Id"><generator class="identity"/></id>
-    <property name="Name" />
+    <property name="UserName" />
     
     <component name="Address">
       <property name="Street1"/>
