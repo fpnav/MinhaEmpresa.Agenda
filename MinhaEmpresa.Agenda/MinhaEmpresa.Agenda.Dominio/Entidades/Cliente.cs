@@ -5,6 +5,7 @@ namespace MinhaEmpresa.Agenda.Dominio.Entidades
 {
     public class Cliente : Entidade<string>
     {
+        
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string Email { get; set; }
@@ -13,9 +14,10 @@ namespace MinhaEmpresa.Agenda.Dominio.Entidades
         public DateTime DataCadastro { get; set; }
 
         //Comportamento que depois será abstraido com Services
-        public bool ClienteVip(Cliente cliente)
+        public bool ClienteVip()
         {
-            return cliente.Ativo && DateTime.Now.Year - cliente.DataCadastro.Year >= 3;
+            return Ativo && DateTime.Now.Year - DataCadastro.Year >= 3;
         }
+
     }
 }

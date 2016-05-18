@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="MinhaEmpresa.Agenda.Dominio.Entidades" assembly="MinhaEmpresa.Agenda.Dominio">
+
+  <class name="Cliente" table="Cliente" mutable="true">
+
+    <id name="Id">
+      <generator class="identity"/>
+    </id>
+    
+    <property name="Nome" />
+    <property name="Sobrenome" />
+    <property name="Email" />
+    <property name="Ativo" />
+    
+  </class>
+</hibernate-mapping>

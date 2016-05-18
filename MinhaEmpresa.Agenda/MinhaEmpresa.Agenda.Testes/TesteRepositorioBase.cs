@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MinhaEmpresa.SharedKernel.Repositorio;
 
-namespace MinhaEmpresa.Agenda.Testes.Repositorio
+namespace MinhaEmpresa.Agenda.Testes
 {
     public class TesteRepositorioBase
     {
@@ -14,11 +14,7 @@ namespace MinhaEmpresa.Agenda.Testes.Repositorio
 
         public TesteRepositorioBase()
         {
-            //NHibernateHelper.CreateDb();
             Helper = new RepositorioHelper();
-            
-            //Kernel.Start();
-            //Helper = Kernel.Get<IRepositorioHelper>();
         }
     }
 }
