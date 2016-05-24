@@ -1,15 +1,17 @@
 ﻿using System;
+using MinhaEmpresa.SharedKernel.Dominio.Agregacoes;
 using MinhaEmpresa.SharedKernel.Dominio.Entidades;
 
 namespace MinhaEmpresa.Agenda.Dominio.Entidades
 {
-    public class Cliente : Entidade<string>
+    public class Cliente : Entidade<string>, IAggregateRoot
     {
-        
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public string Email { get; set; }
-        public bool Ativo { get; set; }
+        public int Id { get; set; }
+
+        public virtual string Nome { get; set; }
+        public virtual string Sobrenome { get; set; }
+        public virtual string Email { get; set; }
+        public virtual bool Ativo { get; set; }
 
         public DateTime DataCadastro { get; set; }
 

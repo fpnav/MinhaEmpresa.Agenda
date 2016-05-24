@@ -2,14 +2,16 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    namespace="MinhaEmpresa.Agenda.Dominio.Entidades" assembly="MinhaEmpresa.Agenda.Dominio">
 
-  <class name="User" table="[Usuarios]" mutable="true">
+  <!--Aqui no atributo table estava assim table=[usuarios] e funcionava bem no localDB-->
+  <!--Para o MySQL tive que retirar os colchetes para que funcionasse-->
+  <class name="User" table="Usuarios" mutable="true">
 
     <id name="Id">
       <generator class="identity"/>
     </id>
     <property name="UserName" />
 
-    <bag table="EnderecosUsuario" name="Address">
+    <bag table="EnderecoUsuario" name="Address">
       <key column="Id" not-null="true"/>
       <!--<list-index column="Adress_Position"></list-index>-->
       <composite-element class="MinhaEmpresa.Agenda.Dominio.ValueObjects.Address">

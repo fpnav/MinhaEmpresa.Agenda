@@ -4,15 +4,14 @@
   <session-factory>
 
     <!-- configurations -->
-    <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
-    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
-    <property name="dialect">NHibernate.Dialect.MySQLDialect</property>
+    <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <property name="dialect">NHibernate.Dialect.MsSql2012Dialect</property>
     <property name="connection.connection_string">
-      server=localhost;user id=root;password=root;persistsecurityinfo=True;database=NHMysql1
+      Data Source=(LocalDB)\v11.0;AttachDbFilename="C:\Users\Fabio Navarro\Documents\NH.mdf";Integrated Security=True;Connect Timeout=30
     </property>
 
     <!-- Atualiza/Cria tabelas e campos automaticamente no BD, com "create" cria o BD de novo-->
-    <property name="hbm2ddl.auto">create</property>
+    <property name="hbm2ddl.auto"></property>
     
     <!-- Mostra SQL gerado pelo NHiberante no Console.Out -->
     <property name="show_sql">true</property>
